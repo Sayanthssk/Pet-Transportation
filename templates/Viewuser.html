@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViewUser</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Place</th>
+            <th>Pin</th>
+            <th>PhoneNo</th>
+        </tr>
+        {% for i in s %}
+        <tr>
+            <td>{{ i.id }}</td>
+            <td>{{ i.Firstname }}  {{ i.Lastname }}</td>
+            <td>{{ i.Place }}</td>
+            <td>{{ i.Pin }}</td>
+            <td>{{ i.Phoneno }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
